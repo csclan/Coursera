@@ -2,6 +2,7 @@
 # list and get the number of files within a directory 
 num=$(ls -p | grep -v / | wc -l)
 
+function guessing {
 # start the counter for the while statement
 counter=$1
 
@@ -27,3 +28,6 @@ else
  break
 fi
 done
+}
+
+guessing
